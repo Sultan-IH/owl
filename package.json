@@ -2,11 +2,12 @@
   "name": "react_crash_todo",
   "version": "0.1.0",
   "private": true,
+  "main": "app/index.js",
   "dependencies": {
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.8",
+    "react-scripts": "^2.1.8",
     "uuid": "^3.3.2"
   },
   "scripts": {
