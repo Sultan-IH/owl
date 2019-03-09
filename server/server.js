@@ -24,4 +24,6 @@ app.use("/match", matchingRouter)
 
 app.use(express.static(path.join(__dirname, '../build')));
 
+db.setup()
+
 app.listen(9009, () => console.log("OWL started on 9009"))

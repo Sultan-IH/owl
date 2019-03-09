@@ -22,6 +22,30 @@ router.post("/", (req, res, next) => {
     // match people to projects
 })
 
+router.put("/:projectID/:profileID", (req, res, next) => {
+    // collaboration
+    let projectPromise = db.getRecord(req.params.projectID)
+    projectPromise.then(project => {
+        if (!project.hasOwnAttribute('collaborators')) {
+            project.collaborators = []
+        }
+        project.collaborators.push(req.params.profileID)
+        let ID = db.projectMap[project['name']]
+        db.updateRecord(project, ID)
+        let profilePromise = db.getRecord(req.params.profileID)
+        profilePromise.then(profile => {
+            let ID = db.profileMap[profile['email']]
+            if (!project.hasOwnAttribute('currentProjects')) {
+                project.currentProjects = []
+            }
+            profile.currentProjects.push(project['name'])
+            db.updateRecord(profile, ID)
+        })
+
+        res.send(200)
+    })
+})
+
 router.get("/:projectID", (req, res, next) => {
     let projectID = req.params.projectID
     console.log("retrieving ID: ", projectID)

@@ -1,12 +1,15 @@
 const secretKey = "$2a$10$PMflazmcGFk4GBGo1BY10uRNnH8KvcTwMdf1XnlvVUXcv20Yo08PC";
 const root = "https://api.jsonbin.io/"
 const binpath = root + "b"
-const collectionpath = root + "c"
 const request = require("request-promise");
-
+const fs = require('fs');
+const path = require("path");
 
 var profiles = [],
     projects = [];
+
+var profileMap = {},
+    projectMap = {};
 
 function getAllRecords(ids) {
     console.log(ids)
@@ -18,15 +21,14 @@ function getAllRecords(ids) {
     return Promise.all(promises)
 }
 
-function createRecord(profile, isProfile) {
+function createRecord(record, isProfile) {
     let options = {
         url: binpath,
         headers: {
             "Content-Type": "application/json",
             "secret-key": secretKey,
-            "name": profile['ID'],
         },
-        json: profile,
+        json: record,
     };
 
     return request.post(options, (error, response, body) => {
@@ -38,16 +40,39 @@ function createRecord(profile, isProfile) {
 
         if (isProfile) {
             profiles.push(body.id)
+            profileMap[record['email']] = body['id']
         } else {
             projects.push(body.id)
+            projectMap[record['name']] = body['id']
+
         }
+
 
         console.log(response.statusCode, response.statusMessage)
         console.log("created profile with ID: ", body)
     }).promise()
 }
 
-function getRecord(ID) {
+function setup() {
+    let text = fs.readFileSync(path.join(__dirname, 'profile_mapping.json'), 'utf8')
+    profileMap = JSON.parse(text);
+    text = fs.readFileSync(path.join(__dirname, 'project_mapping.json'), 'utf8');
+    projectMap = JSON.parse(text)
+
+    for (let p in projectMap) {
+        projects.push(projectMap[p])
+    }
+    console.log("profiles: ", profileMap)
+    console.log("profile list ids ", profiles)
+    console.log("projects: ", projectMap)
+    console.log("project list ids ", projects)
+}
+
+function getRecord(ID, email) {
+    if (ID === undefined) {
+        ID = profileMap[email];
+    }
+
     let options = {
         url: binpath + "/" + ID,
         headers: {
@@ -57,10 +82,35 @@ function getRecord(ID) {
     return request.get(options).promise()
 }
 
+function updateRecord(record, ID) {
+    let options = {
+        url: binpath + "/" + ID,
+        headers: {
+            "Content-Type": "application/json",
+            "secret-key": secretKey,
+        },
+        json: record,
+    };
+
+    return request.put(options, (error, response, body) => {
+        if (error || response.statusCode !== 200) {
+            console.log(response.statusCode, response.statusMessage)
+            console.error("error creating new porfile: ", error)
+            return
+        }
+
+        console.log(response.statusCode, response.statusMessage)
+        console.log("updated record with ID: ", body)
+    }).promise()
+}
 module.exports = {
     createRecord,
     getRecord,
     profiles,
     projects,
-    getAllRecords
+    setup,
+    getAllRecords,
+    updateRecord,
+    profileMap,
+    projectMap,
 }
