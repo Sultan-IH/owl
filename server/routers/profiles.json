@@ -1,204 +1,210 @@
 [{
-        "min_salary": 69.7,
         "picture": "http://placehold.it/32x32",
-        "age": 29,
-        "name": "Concepcion Stanley",
+        "name": "Constance Jackson",
+        "location": "Chicago",
         "gender": "female",
-        "email": "concepcionstanley@ecratic.com",
-        "location": "Beyerville",
-        "skills": [
-            "fishing",
-            "public speaking"
-        ]
-    },
-    {
-        "min_salary": 22.41,
-        "picture": "http://placehold.it/32x32",
-        "age": 31,
-        "name": "Willie Hopkins",
-        "gender": "female",
-        "email": "williehopkins@ecratic.com",
-        "location": "Grandview",
-        "skills": [
-            "sewing",
-            "sewing",
-            "playing guitar"
-        ]
-    },
-    {
-        "min_salary": 21.74,
-        "picture": "http://placehold.it/32x32",
-        "age": 30,
-        "name": "Reyes Hogan",
-        "gender": "male",
-        "email": "reyeshogan@ecratic.com",
-        "location": "Leland",
-        "skills": [
-            "build",
-            "playing guitar",
-            "gunting"
-        ]
-    },
-    {
-        "min_salary": 80.49,
-        "picture": "http://placehold.it/32x32",
-        "age": 37,
-        "name": "Margarita Donaldson",
-        "gender": "female",
-        "email": "margaritadonaldson@ecratic.com",
-        "location": "Boykin",
-        "skills": [
-            "sing"
-        ]
-    },
-    {
-        "min_salary": 93.55,
-        "picture": "http://placehold.it/32x32",
-        "age": 25,
-        "name": "Eunice West",
-        "gender": "female",
-        "email": "eunicewest@ecratic.com",
-        "location": "Lemoyne",
-        "skills": [
-            "build"
-        ]
-    },
-    {
-        "min_salary": 19.81,
-        "picture": "http://placehold.it/32x32",
-        "age": 31,
-        "name": "April Torres",
-        "gender": "female",
-        "email": "apriltorres@ecratic.com",
-        "location": "Waukeenah",
-        "skills": [
-            "boxing",
-            "fishing"
-        ]
-    },
-    {
-        "min_salary": 28.46,
-        "picture": "http://placehold.it/32x32",
-        "age": 26,
-        "name": "Castro Washington",
-        "gender": "male",
-        "email": "castrowashington@ecratic.com",
-        "location": "Rockingham",
-        "skills": [
-            "code"
-        ]
-    },
-    {
-        "min_salary": 45.48,
-        "picture": "http://placehold.it/32x32",
-        "age": 27,
-        "name": "Campos Brock",
-        "gender": "male",
-        "email": "camposbrock@ecratic.com",
-        "location": "Fillmore",
-        "skills": [
-            "dancing",
-            "manage"
-        ]
-    },
-    {
-        "min_salary": 36.43,
-        "picture": "http://placehold.it/32x32",
-        "age": 34,
-        "name": "Bolton Morton",
-        "gender": "male",
-        "email": "boltonmorton@ecratic.com",
-        "location": "Nicut",
-        "skills": [
-            "boxing",
-            "gunting"
-        ]
-    },
-    {
-        "min_salary": 96.34,
-        "picture": "http://placehold.it/32x32",
-        "age": 31,
-        "name": "West Hampton",
-        "gender": "male",
-        "email": "westhampton@ecratic.com",
-        "location": "Topanga",
+        "age": 19,
+        "email": "constancejackson@plasmosis.com",
         "skills": [
             "baking",
-            "fishing",
-            "sing"
-        ]
-    },
-    {
-        "min_salary": 87.89,
-        "picture": "http://placehold.it/32x32",
-        "age": 39,
-        "name": "Michael Nieves",
-        "gender": "male",
-        "email": "michaelnieves@ecratic.com",
-        "location": "Nettie",
-        "skills": [
-            "gunting"
-        ]
-    },
-    {
-        "min_salary": 60,
-        "picture": "http://placehold.it/32x32",
-        "age": 38,
-        "name": "Hope Pate",
-        "gender": "female",
-        "email": "hopepate@ecratic.com",
-        "location": "Fairhaven",
-        "skills": [
-            "manage",
-            "code"
-        ]
-    },
-    {
-        "min_salary": 91.05,
-        "picture": "http://placehold.it/32x32",
-        "age": 28,
-        "name": "George Woods",
-        "gender": "male",
-        "email": "georgewoods@ecratic.com",
-        "location": "Walker",
-        "skills": [
-            "fishing",
-            "fishing",
-            "cook",
             "dancing",
             "cook"
         ]
     },
     {
-        "min_salary": 38.86,
         "picture": "http://placehold.it/32x32",
-        "age": 30,
-        "name": "Mathews Randall",
-        "gender": "male",
-        "email": "mathewsrandall@ecratic.com",
-        "location": "Manila",
+        "name": "Wilda Huff",
+        "location": "London",
+        "gender": "female",
+        "age": 28,
+        "email": "wildahuff@plasmosis.com",
         "skills": [
-            "build",
-            "build",
             "playing guitar",
-            "manage",
+            "cook",
+            "baking",
+            "hunting",
+            "dancing",
+            "boxing"
+        ]
+    },
+    {
+        "picture": "http://placehold.it/32x32",
+        "name": "Rosella Chen",
+        "location": "London",
+        "gender": "female",
+        "age": 46,
+        "email": "rosellachen@plasmosis.com",
+        "skills": [
+            "boxing",
+            "manage"
+        ]
+    },
+    {
+        "picture": "http://placehold.it/32x32",
+        "name": "Mamie Price",
+        "location": "Chicago",
+        "gender": "female",
+        "age": 26,
+        "email": "mamieprice@plasmosis.com",
+        "skills": [
+            "boxing",
+            "dancing",
+            "sing",
+            "fishing",
+            "cook"
+        ]
+    },
+    {
+        "picture": "http://placehold.it/32x32",
+        "name": "Shelley Donaldson",
+        "location": "London",
+        "gender": "female",
+        "age": 40,
+        "email": "shelleydonaldson@plasmosis.com",
+        "skills": [
+            "hunting",
+            "baking",
+            "draw",
+            "clean",
+            "draw"
+        ]
+    },
+    {
+        "picture": "http://placehold.it/32x32",
+        "name": "Hutchinson Buck",
+        "location": "London",
+        "gender": "male",
+        "age": 26,
+        "email": "hutchinsonbuck@plasmosis.com",
+        "skills": [
+            "dancing"
+        ]
+    },
+    {
+        "picture": "http://placehold.it/32x32",
+        "name": "Tammie Caldwell",
+        "location": "London",
+        "gender": "female",
+        "age": 19,
+        "email": "tammiecaldwell@plasmosis.com",
+        "skills": [
+            "code",
+            "boxing",
+            "clean",
+            "hunting"
+        ]
+    },
+    {
+        "picture": "http://placehold.it/32x32",
+        "name": "Garcia Franks",
+        "location": "London",
+        "gender": "male",
+        "age": 20,
+        "email": "garciafranks@plasmosis.com",
+        "skills": [
+            "clean",
+            "public speaking"
+        ]
+    },
+    {
+        "picture": "http://placehold.it/32x32",
+        "name": "Meyer Stevenson",
+        "location": "Chicago",
+        "gender": "male",
+        "age": 24,
+        "email": "meyerstevenson@plasmosis.com",
+        "skills": [
+            "baking",
+            "build",
+            "fishing",
+            "build",
+            "boxing",
             "playing guitar"
         ]
     },
     {
-        "min_salary": 54.13,
         "picture": "http://placehold.it/32x32",
-        "age": 37,
-        "name": "Judy Ball",
+        "name": "Joanna Reynolds",
+        "location": "London",
         "gender": "female",
-        "email": "judyball@ecratic.com",
-        "location": "Joes",
+        "age": 24,
+        "email": "joannareynolds@plasmosis.com",
         "skills": [
-            "gunting",
-            "sing",
-            "baking",
+            "hunting",
+            "dancing",
+            "code",
+            "baking"
+        ]
+    },
+    {
+        "picture": "http://placehold.it/32x32",
+        "name": "Garner Rosario",
+        "location": "Chicago",
+        "gender": "male",
+        "age": 49,
+        "email": "garnerrosario@plasmosis.com",
+        "skills": [
+            "manage",
+            "manage",
+            "manage"
+        ]
+    },
+    {
+        "picture": "http://placehold.it/32x32",
+        "name": "Kane Perry",
+        "location": "London",
+        "gender": "male",
+        "age": 22,
+        "email": "kaneperry@plasmosis.com",
+        "skills": [
+            "clean",
+            "build",
+            "boxing"
+        ]
+    },
+    {
+        "picture": "http://placehold.it/32x32",
+        "name": "Noelle Holcomb",
+        "location": "Chicago",
+        "gender": "female",
+        "age": 43,
+        "email": "noelleholcomb@plasmosis.com",
+        "skills": [
+            "sewing",
+            "build",
+            "boxing",
             "cook",
-            "gunting"
+            "boxing",
+            "build"
+        ]
+    },
+    {
+        "picture": "http://placehold.it/32x32",
+        "name": "Shirley Hunter",
+        "location": "Chicago",
+        "gender": "female",
+        "age": 24,
+        "email": "shirleyhunter@plasmosis.com",
+        "skills": [
+            "public speaking",
+            "boxing",
+            "manage",
+            "baking"
+        ]
+    },
+    {
+        "picture": "http://placehold.it/32x32",
+        "name": "Elsie Robbins",
+        "location": "Chicago",
+        "gender": "female",
+        "age": 22,
+        "email": "elsierobbins@plasmosis.com",
+        "skills": [
+            "draw",
+            "hunting",
+            "cook",
+            "dancing",
+            "fishing"
         ]
     }
 ]
