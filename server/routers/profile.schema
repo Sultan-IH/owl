@@ -1,0 +1,15 @@
+[
+  '{{repeat(15)}}',
+  {
+    picture: 'http://placehold.it/32x32',
+    name: '{{firstName()}} {{surname()}}',
+    location: '{{random("London","Chicago")}}',
+    gender: '{{gender()}}',
+    age: '{{integer(18,50)}}',
+    email: '{{email()}}',
+    skills:[
+      '{{repeat(1,6)}}',
+      '{{random("cook","manage","draw","sing","clean","build","code", "sewing","playing guitar","hunting","boxing","dancing","baking","public speaking","fishing")}}'
+    ]
+  }
+]

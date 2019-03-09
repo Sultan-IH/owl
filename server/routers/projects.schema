@@ -1,0 +1,20 @@
+[
+  '{{repeat(4)}}',
+  {
+    profit: '{{floating(0, 0.4, 2, "0.00")}}',
+    picture: 'http://placehold.it/32x32',
+    name: '{{lorem(2,"words").toUpperCase()}}',
+    location: '{{random("London","Chicago")}}',
+    main_organiser: '{{firstName()}} {{surname()}}',
+    num_people:'{{integer(1,10)}}',
+    date: '{{date(new Date(), new Date(2019, 4, 1))}}',
+    skills:[
+      '{{repeat(1,6)}}',
+      '{{random("cook","manage","draw","sing","clean","build","code", "sewing","playing guitar","hunting","boxing","dancing","baking","public speaking","fishing")}}'
+    ],
+     sponsor_companies: [
+  	'{{repeat(0,2)}}',
+       '{{company()}}'
+     ]
+  }
+]

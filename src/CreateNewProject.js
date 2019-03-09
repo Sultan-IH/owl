@@ -39,7 +39,7 @@ export class CreateNewProject extends Component {
       submitForm(event){
         event.preventDefault();
 
-        fetch("http://38316dbb.ngrok.io/projects/", {method: "POST", json: this.state})
+        fetch("http://localhost:9009/projects", {method: "POST", json: this.state})
         .then(project => console.log(project))
         .catch(err => console.error(err))
 

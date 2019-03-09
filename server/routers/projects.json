@@ -1,0 +1,72 @@
+[{
+        "profit": 0.22,
+        "picture": "http://placehold.it/32x32",
+        "name": "DESERUNT NON",
+        "location": "London",
+        "main_organiser": "Ferrell Lewis",
+        "num_people": 7,
+        "date": "Thu Apr 18 2019 10:37:24 GMT+0100 (British Summer Time)",
+        "skills": [
+            "manage",
+            "code",
+            "code",
+            "manage"
+        ],
+        "sponsor_companies": []
+    },
+    {
+        "profit": 0.29,
+        "picture": "http://placehold.it/32x32",
+        "name": "NON MOLLIT",
+        "location": "London",
+        "main_organiser": "Margarita Buckley",
+        "num_people": 3,
+        "date": "Fri Mar 22 2019 13:38:06 GMT+0000 (Greenwich Mean Time)",
+        "skills": [
+            "cook"
+        ],
+        "sponsor_companies": [
+            "Cosmetex"
+        ]
+    },
+    {
+        "profit": 0.17,
+        "picture": "http://placehold.it/32x32",
+        "name": "QUIS LOREM",
+        "location": "Chicago",
+        "main_organiser": "Graves Juarez",
+        "num_people": 7,
+        "date": "Fri Mar 15 2019 20:36:15 GMT+0000 (Greenwich Mean Time)",
+        "skills": [
+            "playing guitar",
+            "sewing",
+            "draw",
+            "hunting",
+            "build",
+            "fishing"
+        ],
+        "sponsor_companies": [
+            "Aquacine",
+            "Amtas"
+        ]
+    },
+    {
+        "profit": 0.06,
+        "picture": "http://placehold.it/32x32",
+        "name": "DO MAGNA",
+        "location": "London",
+        "main_organiser": "Everett Carr",
+        "num_people": 6,
+        "date": "Tue Apr 02 2019 13:58:49 GMT+0100 (British Summer Time)",
+        "skills": [
+            "sewing",
+            "sewing",
+            "draw",
+            "clean"
+        ],
+        "sponsor_companies": [
+            "Accel",
+            "Zoid"
+        ]
+    }
+]
