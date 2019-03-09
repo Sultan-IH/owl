@@ -3,8 +3,12 @@ import Header from './components/layout/Header.js'
 import Todos from './components/Todos.js'
 import AddTodo from './components/AddTodo'
 import uuid from 'uuid'
-
+import { BrowserRouter,Route} from "react-router-dom";
 import './App.css';
+import profile, { Profile } from './components/Profile.js';
+import ProjectList from './components/ProjectList.js';
+import CreateNewProject from './CreateNewProject.js';
+import NavigationBar from './components/NavigationBar.js';
 
 class App extends Component {
   state = {
@@ -58,16 +62,24 @@ class App extends Component {
   }
   render() {
     return (
+      <BrowserRouter>
+
       <div className="App">
+      <NavigationBar/>
         <div className="container">
-          <Header />
-          <AddTodo addTodo={this.addTodo} />
+          
+          <Route path="/projects" component={ProjectList} />
+          <Route path="/profile" component={Profile} />
+          <Route path="/newProject" component={CreateNewProject} />
+          {/* <AddTodo addTodo={this.addTodo} />
           <Todos todos={this.state.todos} markComplete={this.markComplete}
-            delTodo={this.delTodo} />
+            delTodo={this.delTodo} /> */}
+            {/* <ProjectList/> */}
         </div>
 
 
       </div>
+      </BrowserRouter>
     );
   }
 }
