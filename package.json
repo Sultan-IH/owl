@@ -4,13 +4,20 @@
   "private": true,
   "main": "app/index.js",
   "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.8",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
     "uuid": "^3.3.2"
   },
   "scripts": {
+    "serve": "node ./server/server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
