@@ -38,11 +38,18 @@ export class CreateNewProject extends Component {
       }
       submitForm(event){
         event.preventDefault();
+        let options = {
+            method: "POST",
+             body: JSON.stringify(this.state),
+             headers:{
+                'Content-Type': 'application/json'
+               }
+            }
+        console.log(options)
 
-        fetch("http://localhost:9009/projects", {method: "POST", json: this.state})
-        .then(project => console.log(project))
-        .catch(err => console.error(err))
-
+        fetch("/projects", options)
+            .then(response => console.log(response.json()))
+            .catch(err => console.error(err))
       }
     
   render() {
@@ -80,7 +87,7 @@ export class CreateNewProject extends Component {
               </div>
               <div className="form-group">
                 <label htmlFor="exampleInput">Location</label>
-                <input type="text" className="form-control"id="location"  onChange={this.changeAttr}/>
+                <input type="text" className="form-control" id="location"  onChange={this.changeAttr}/>
               </div>
               <div className="form-group">
                 <label htmlFor="exampleInput">Number of people</label>
@@ -88,7 +95,7 @@ export class CreateNewProject extends Component {
               </div>
               <div className="form-group">
                 <label htmlFor="exampleInput">Date</label>
-                <input type="date" className="form-control" id="date" value={this.state.date} onChange={this.changeAttr}/>
+                <input type="date" className="form-control" id="date" onChange={this.changeAttr}/>
               </div>
             
           </div>

@@ -8,7 +8,7 @@ router.post("/", (req, res, next) => {
     let ID = uuid();
     console.log("new ID: ", ID)
     let projectBody = req.body;
-
+    console.log(req.body)
     projectBody['ID'] = ID;
     projectBody['type'] = 'project'
 
