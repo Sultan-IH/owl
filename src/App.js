@@ -67,7 +67,7 @@ class App extends Component {
       <div className="App">
       <NavigationBar/>
         <div className="container">
-          
+        
           <Route path="/projects" component={ProjectList} />
           <Route path="/profile" component={Profile} />
           <Route path="/newProject" component={CreateNewProject} />
