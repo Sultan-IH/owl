@@ -1,38 +1,66 @@
 const secretKey = "$2a$10$PMflazmcGFk4GBGo1BY10uRNnH8KvcTwMdf1XnlvVUXcv20Yo08PC";
-const root = "https://api.jsonbin.io/b"
+const root = "https://api.jsonbin.io/"
+const binpath = root + "b"
+const collectionpath = root + "c"
 const request = require("request-promise");
 
-function createProfile(profile) {
+
+var profiles = [],
+    projects = [];
+
+function getAllRecords(ids) {
+    console.log(ids)
+    let promises = [];
+    for (let id of ids) {
+        let promise = getRecord(id);
+        promises.push(promise)
+    }
+    return Promise.all(promises)
+}
+
+function createRecord(profile, isProfile) {
     let options = {
-        url: root,
+        url: binpath,
         headers: {
             "Content-Type": "application/json",
             "secret-key": secretKey,
-            //"collection-id": "profiles",
             "name": profile['ID'],
         },
         json: profile,
     };
-    console.log(options)
+
     return request.post(options, (error, response, body) => {
-        if (response.statusCode !== 200) console.error("error creating new porfile")
-        if (error) console.error("error creating new porfile: ", error)
+        if (error || response.statusCode !== 200) {
+            console.log(response.statusCode, response.statusMessage)
+            console.error("error creating new porfile: ", error)
+            return
+        }
+
+        if (isProfile) {
+            profiles.push(body.id)
+        } else {
+            projects.push(body.id)
+        }
 
         console.log(response.statusCode, response.statusMessage)
         console.log("created profile with ID: ", body)
     }).promise()
 }
 
-function getProfile(ID) {
+function getRecord(ID) {
     let options = {
-        url: root + "/" + ID,
+        url: binpath + "/" + ID,
         headers: {
             "secret-key": secretKey,
         }
     };
     return request.get(options).promise()
 }
+
 module.exports = {
-    createProfile: createProfile,
-    getProfile: getProfile,
+    createRecord,
+    getRecord,
+    profiles,
+    projects,
+    getAllRecords
 }

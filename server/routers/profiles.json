@@ -1,0 +1,48 @@
+[{
+        "country_origin": "UK",
+        "name": "Josh Sullivan",
+        "age": 56,
+        "location": "London",
+        "min_salary": 40,
+        "skills": [
+            "cook",
+            "eat",
+            "code"
+        ]
+    }, {
+        "country_origin": "Korea",
+        "name": "Amelie Seo",
+        "age": 55,
+        "location": "London",
+        "min_salary": 50,
+        "skills": [
+            "cook chicken",
+            "eat chicken",
+            "code"
+        ]
+    },
+    {
+        "country_origin": "Ireland",
+        "name": "Irina Bluewater",
+        "age": 32,
+        "location": "London",
+        "min_salary": 50,
+        "skills": [
+            "hack",
+            "draw",
+            "sing"
+        ]
+    },
+    {
+        "country_origin": "USA",
+        "name": "elon musk",
+        "age": 32,
+        "location": "Chicago",
+        "min_salary": 50,
+        "skills": [
+            "code",
+            "manage",
+            "tweet"
+        ]
+    }
+]

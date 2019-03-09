@@ -12,7 +12,7 @@ router.post("/", (req, res, next) => {
     profileBody['type'] = 'profile';
     profileBody['ID'] = ID;
 
-    let createdPromise = db.createProfile(profileBody)
+    let createdPromise = db.createRecord(profileBody, true)
     createdPromise.then((body) => {
         res.send(201, body)
     }).catch(err => {
@@ -24,7 +24,7 @@ router.post("/", (req, res, next) => {
 router.get("/:profileID", (req, res, next) => {
     let profileID = req.params.profileID
     console.log("retrieving ID: ", profileID)
-    let dataPromise = db.getProfile(profileID)
+    let dataPromise = db.getRecord(profileID)
     dataPromise.then((body) => {
         console.log("in route: ", body)
         res.send(200, body)

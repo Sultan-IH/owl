@@ -12,7 +12,7 @@ router.post("/", (req, res, next) => {
     projectBody['ID'] = ID;
     projectBody['type'] = 'project'
 
-    let createdPromise = db.createProfile(projectBody)
+    let createdPromise = db.createRecord(projectBody, false)
     createdPromise.then((body) => {
         res.send(201, body)
     }).catch(err => {
@@ -25,7 +25,7 @@ router.post("/", (req, res, next) => {
 router.get("/:projectID", (req, res, next) => {
     let projectID = req.params.projectID
     console.log("retrieving ID: ", projectID)
-    let dataPromise = db.getProfile(projectID)
+    let dataPromise = db.getRecord(projectID)
     dataPromise.then((body) => {
         console.log("in route: ", body)
         res.send(200, body)
