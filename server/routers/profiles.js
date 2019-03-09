@@ -24,7 +24,7 @@ router.post("/", (req, res, next) => {
 router.get("/:profileID", (req, res, next) => {
     let profileID = req.params.profileID
     console.log("retrieving ID: ", profileID)
-    let dataPromise = db.getRecord(profileID)
+    let dataPromise = db.getRecord(undefined, profileID)
     dataPromise.then((body) => {
         console.log("in route: ", body)
         res.send(200, body)
