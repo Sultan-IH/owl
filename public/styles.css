@@ -4,10 +4,20 @@
 		/* padding: 60px 0px; */
 		background-color: rgb(220, 220, 220);
 	}
+
+
+	.modal-body{
+		font-size: medium;
+	}
+    /* .container{
+        background-color: grey;
+    } */
+
     #newProjectButton{
         float: left;
         height: 60px;
     }
+
     .event-list {
 		list-style: none;
 		font-family: 'Lato', sans-serif;

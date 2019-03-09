@@ -12,7 +12,7 @@ import NavigationBar from './components/NavigationBar.js';
 import MyProjects from './components/MyProjects.js';
 class App extends Component {
   state = {
-    todos: [
+    projects: [
       {
         id: uuid.v4(),
         title: 'Take out the trash',
@@ -32,36 +32,37 @@ class App extends Component {
   }
 
   // Toggle Complete
-  markComplete = (id) => {
-    this.setState({
-      todos: this.state.todos.map(
-        todo => {
-          if (todo.id == id) {
-            todo.completed = !todo.completed;
-          }
-          return todo;
-        }
-      )
-    })
-  }
+  // markComplete = (id) => {
+  //   this.setState({
+  //     todos: this.state.todos.map(
+  //       todo => {
+  //         if (todo.id == id) {
+  //           todo.completed = !todo.completed;
+  //         }
+  //         return todo;
+  //       }
+  //     )
+  //   })
+  // }
 
-  delTodo = id => {
-    this.setState({
-      todos: [...this.state.todos.filter(
-        todo => todo.id != id)]
-    })
-  }
+  // delTodo = id => {
+  //   this.setState({
+  //     todos: [...this.state.todos.filter(
+  //       todo => todo.id != id)]
+  //   })
+  // }
 
-  addTodo = (title) => {
+  addTodo = (projectItem) => {
     const newTodo = {
       id: uuid.v4(),
-      title,
+      // title,
       completed : false
    }
     this.setState({ todos: [...this.state.todos, newTodo] })
   }
   render() {
     return (
+      // <ProjectList ></ProjectList>
       <BrowserRouter>
 
       <div className="App">

@@ -6,9 +6,8 @@ export class Profile extends Component {
     return (
     
       <div>
-        <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal">✕</button>
-			        <h3>About Joe</h3>
+        <div style={headerStyle}>
+			        <h3 style={{marginTop: '70px'}}>About Joe</h3>
 			    </div>
             <div class="modal-body">
                     <center>
@@ -41,6 +40,10 @@ export class Profile extends Component {
       </div>
     )
   }
+}
+
+const headerStyle = {
+  textAlign: 'center',
 }
 
 export default Profile

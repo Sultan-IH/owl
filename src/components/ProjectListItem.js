@@ -14,6 +14,8 @@ export class ProjectListItem extends Component {
 
     render() {
         // const {id, title} = this.props.todo; //destructuring
+        const desc = "This project entails cooking grilgfefmefkemfkefmkefmrgrgrrggrgrled chicken"
+        
         return (
         
         <li>
@@ -24,15 +26,19 @@ export class ProjectListItem extends Component {
                 <span className="time">ALL DAY</span>
             </time>
             <img alt="Independence Day" src="https://farm4.staticflickr.com/3100/2693171833_3545fb852c_q.jpg" />
-            <div className="info">
+            <div className="info" style={infoStyle}>
                 <h2 className="title">Grilled Chicken Day</h2>
-                <p className="desc">This project entails cooking grilled chicken</p>
-                <p className="desc">Preferred Skills:{' '}
+                <p className="desc">{desc}</p>
+                <div style = {{paddingLeft: '10px'}}>
+                    <div>
                     <span class="label label-warning">HTML5/CSS</span>
-                    <span class="label label-info">Adobe CS 5.5</span></p>
-                <p className="desc">Skills Required: {' '}
+                    <span class="label label-info">Adobe CS 5.5</span>
                     <span class="label label-info">Microsoft Office</span>
-                    <span class="label label-success">Windows XP, Vista, 7</span></p>
+                    <span class="label label-success">Windows XP, Vista, 7</span>
+                    </div>
+                </div>
+                
+
             </div>
             <div className="social">
                 <ul>
@@ -48,6 +54,20 @@ export class ProjectListItem extends Component {
   }
 }
 
+const infoStyle = {
+    height: 'auto',
+    fontSize: 'medium',
+    padding: '10px;'
+}
+
+const skillsStyle = {
+    paddingLeft: '20px',
+    paddingRight: '20px'
+}
+
+const skillItemStyle = {
+    margin: '0'
+}
 //PropTypes
 // ProjectListItem.propTypes = {
 //     todo: PropTypes.object.isRequired
