@@ -11,8 +11,9 @@ app.use(express.urlencoded({
     extended: false
 }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
 
-app.use()
+app.use(express.static(path.join(__dirname, '../build')));
+
+
 
 app.listen(9009, () => console.log("OWL started on 9009"))
