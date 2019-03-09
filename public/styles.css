@@ -5,7 +5,10 @@
 		background-color: rgb(220, 220, 220);
 	}
 
-
+.jumbotron-heading{
+    font-family: monospace;
+    font-weight: bold;
+}
 	.modal-body{
 		font-size: medium;
 	}
@@ -106,7 +109,8 @@
 	.event-list > li > .social > ul {
 		margin: 0px;
 	}
-	.event-list > li > .info > ul > li,
+    .event-list > li > .info > ul > li,
+    
 	.event-list > li > .social > ul > li {
 		display: table-cell;
 		cursor: pointer;
@@ -282,3 +286,14 @@
     padding:7px;
     width:auto;
   }
+
+ .desc{
+     font-size: 20px !important;
+     font-family: monospace;
+     
+ }
+
+ .titles{
+    font-family: monospace;
+    font-size: 40px !important;
+}

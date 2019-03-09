@@ -6,10 +6,12 @@ export class NavigationBar extends Component {
       <div class="headerNav">
         <div class="topnav">
             {/* <Link class="active" to="/projects">Home</Link> */}
+            <Link class="active"  to="/about">Home</Link>
             <Link class="active"  to="/projects">Available Projects</Link>
             <Link class="active"  to="/myProjects">My Projects</Link>
             <Link class="active"  to="/profile">Profile</Link>
             <Link class="active"  to="/newProject">New Project</Link>
+            
             
         </div>
       </div>

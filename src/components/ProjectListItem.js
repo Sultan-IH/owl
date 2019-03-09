@@ -2,19 +2,11 @@
 import React, { Component } from 'react'
 
 export class ProjectListItem extends Component {
-    // getStyle = () => {
-    //     return {
-    //         background: '#f4f4f4',
-    //         padding: '10px',
-    //         borderBottom: '1px #ccc dotted',
-    //         textDecoration: this.props.todo.completed ? 
-    //         'line-through' : 'none'
-    //     }
-    // }
+    
 
     render() {
         // const {id, title} = this.props.todo; //destructuring
-        const desc = "This project entails cooking grilgfefmefkemfkefmkefmrgrgrrggrgrled chicken"
+        const desc = "This project entails cooking chicken"
         
         return (
         
@@ -43,11 +35,12 @@ export class ProjectListItem extends Component {
             <div className="social">
                 <ul>
                 <li className="facebook" style={{width: '33%'}}><a href="#facebook"><span className="fa fa-facebook" /></a></li>
-                <li className="twitter" style={{width: '34%'}}><a href="#twitter"><span className="fa fa-twitter" /></a></li>
+                <li className="twitter" style={{width: '34%'}}><a href="#twitter"><i title="Join Project" className="far fa-handshake" ></i></a></li>
                 <li className="google-plus" style={{width: '33%'}}><a href="#google-plus"><span className="fa fa-google-plus" /></a></li>
                 </ul>
             </div>
-            </li>
+         
+        </li>
 
         
         )
@@ -55,7 +48,7 @@ export class ProjectListItem extends Component {
 }
 
 const infoStyle = {
-    height: 'auto',
+    height: '100%',
     fontSize: 'medium',
     padding: '10px;'
 }

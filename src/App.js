@@ -10,6 +10,7 @@ import ProjectList from './components/ProjectList.js';
 import CreateNewProject from './CreateNewProject.js';
 import NavigationBar from './components/NavigationBar.js';
 import MyProjects from './components/MyProjects.js';
+import About from './components/About.js';
 class App extends Component {
   state = {
     projects: [
@@ -74,6 +75,7 @@ class App extends Component {
           <Route path="/newProject" component={CreateNewProject} />
 
           <Route path="/myProjects" component={MyProjects} />
+          <Route path="/about" component={About} />
           {/* <AddTodo addTodo={this.addTodo} />
           <Todos todos={this.state.todos} markComplete={this.markComplete}
             delTodo={this.delTodo} /> */}
